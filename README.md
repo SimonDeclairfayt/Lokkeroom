@@ -7,12 +7,48 @@ Lokkeroom is a Full-Stack chat application using React/Supabase/Express/Node. Th
 
 This Readme separates in two parts
 
-- [1: The Frontend Part](##frontend)
-- [2: The Backend Part](##backend)
+- [1: The Frontend Part](#frontend)
+- [2: The Backend Part](#backend)
 
-## Frontend
+# Frontend
 
-## Backend
+## Working on the project
+
+For working on the frontend it's pretty easy you just need to fork this project then :
+
+```
+    cd project/client
+    npm install
+    npm run dev
+```
+
+To fetch they use the deployed database if you want to work on the backend you should do these commands in a split terminal :
+
+```
+    cd project/server
+    npm install
+    npm run start
+```
+
+And then change the fetch links to your localhost.
+
+## Features
+
+Most of the features that you see in the Backend part are done on the website (Authentication/Create Message Lobbies/Messaging system/Controlling Lobbies)
+
+### To improve
+
+- Make all the lobbies that you are a part of visible on desktop (but not on mobile)
+- Improve UX of delete Messages
+- Use Context or socket.io to display messages in real time for both users (no need to refresh)
+
+### To add
+
+- Logging out (pretty basic but i forgot oups)
+- Updating messages from the lobbies
+- Direct Messages (might need to alter the backend for that one)
+
+# Backend
 
 ## Features
 
