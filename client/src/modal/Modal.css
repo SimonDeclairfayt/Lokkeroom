@@ -1,0 +1,170 @@
+.darkBG {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    background: white;
+    color: white;
+    z-index: 10;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  }
+  
+  .modalHeader {
+    height: 50px;
+    background: white;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  
+  .heading {
+    margin: 0;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+  }
+  .result-list{
+
+    position: relative;
+    z-index: 3;
+    padding-left: 0;
+    list-style-type: none;
+    left: 15%;
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 8px;
+    margin-top: -1rem;
+    max-height: 200px;
+    overflow-y: scroll;
+    padding-bottom: 1rem;
+  }
+  .result-list li{
+    border:1px solid rgba(36, 120, 109, 0.5);
+    width: 99%;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+  .result-list li:hover{
+    background-color: #F8F8F8;
+  }
+  .modalContent {
+    padding: 10px;
+    font-size: 14px;
+    color: #2c3e50;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modalActions {
+    position: absolute;
+    bottom: 2px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .actionsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .closeBtn {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-self: flex-end;
+    margin-top: -7px;
+    margin-right: -7px;
+  }
+  
+  .closeBtn:hover {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  }
+  
+  .deleteBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 28px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    color: #fff;
+    background: #20A090;
+    transition: all 0.25s ease;
+  }
+  
+  .deleteBtn:hover {
+    box-shadow: 0 10px 20px -10px rgba(32, 160, 144, 0.6);
+    background: #20A090;
+  }
+  
+  .cancelBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 28px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    color: #2c3e50;
+    background: #fcfcfc;
+    transition: all 0.25s ease;
+  }
+  
+  .cancelBtn:hover {
+    box-shadow: none;
+    transform: none;
+    background: whitesmoke;
+  }
+
+@media(min-width:764px){
+  .modal{
+    width: 350px;
+    height: 280px;
+  }
+  .username-container{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    align-items: flex-start;
+  }
+  .username-container input{
+    width: 100%;
+  }
+}

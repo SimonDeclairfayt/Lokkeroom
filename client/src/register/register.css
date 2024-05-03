@@ -1,0 +1,28 @@
+.title--register{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    font-size: 1.6rem;
+}
+
+.title--register::after{
+    content: "";
+    position: absolute;
+    margin-bottom: -24px;
+    margin-left: 215px;
+    background-color: #58C3B6;
+    width: 56px;
+    height: 8px;
+    align-self: center;
+    z-index: -1;
+}
+@media (min-width:764px) {
+    .title--register{
+        font-size: 2.4rem;
+    }
+    .title--register::after{
+        height: 10px;
+        margin-left: 360px;
+    }
+}

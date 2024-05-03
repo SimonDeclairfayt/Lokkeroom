@@ -1,0 +1,15 @@
+/*CONTAINERS*/
+.createLobby-container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    padding: 2rem 2.4rem 2rem 2.4rem;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.title--createLobby{
+    margin-bottom: 3rem;
+}

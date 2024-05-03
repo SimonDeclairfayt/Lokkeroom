@@ -1,0 +1,127 @@
+/*CONTAINER*/
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 2.4rem 2rem 2.4rem;
+    overflow-x: hidden;
+    position: relative;
+}
+.lobby-container{
+    display: flex;
+    flex-flow: column nowrap;
+    list-style-type: none;
+    padding: 0;
+}
+.lobby-link-container{
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+/*LINKS*/
+.lobby-link{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding: 24px 0;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.lobby-link span{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 1.5rem 0 1.25rem;
+    color: #24786D;
+}
+.link{
+    text-decoration: none;
+    color: #24786D;
+}
+.link--createLobby{
+    position: fixed;
+    color: #fff;
+    display: inline-block;
+    background-color: #24786D;
+    width: 80%;
+    padding: 0.75rem 3rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    bottom: 0;
+}
+/*FONTS*/
+.title{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.title--logo{
+    font-size:2rem;
+    position: relative;
+    margin: 2rem 0 2rem 0;
+    z-index: 2;
+}
+.text-center{
+    text-align: center;
+}
+.text--createLobby{
+    text-align: left;
+    margin-bottom: 3rem;
+    color: #6A7974;
+    font-weight: 300;
+}
+/*PSEUDO-ELEMENTS*/
+.title--logo::after{
+    content: "";
+    position: absolute;
+    background-color: #58C3B6;
+    width: 56px;
+    height: 8px;
+    margin-left: -180px;
+    bottom: 2px;
+    z-index: -1;
+}
+@media (min-width:764px){
+    .title--logo{
+        font-size: 3rem;
+    }
+    .title--logo::after{
+        bottom: 6px;
+        margin-left: -270px;
+        height: 12px;
+    }
+    .lobby-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        width: 100%;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .home-container{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .link--createLobby{
+        width: 60%;
+    }
+    .lobby-link{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 1rem;
+    }
+    .home-container{
+        padding: 3rem 3.4rem 4rem 3.4rem;
+    }
+}
+@media(min-width:1340px){
+    .link--createLobby{
+        width: 30%;
+    }
+    .lobby-container{
+        width: 50%;
+    }
+}
