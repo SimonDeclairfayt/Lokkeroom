@@ -7,8 +7,8 @@ Lokkeroom is a Full-Stack chat application using React/Supabase/Express/Node. Th
 
 This Readme separates in two parts
 
-- [1:-The-Frontend-Part](#-Frontend)
-- [2:-The-Backend-Part](#-Backend)
+- [1: The Frontend Part](##frontend)
+- [2: The Backend Part](##backend)
 
 ## Frontend
 
