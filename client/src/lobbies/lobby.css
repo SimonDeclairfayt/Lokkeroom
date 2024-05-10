@@ -151,14 +151,14 @@
     cursor: pointer;
 }
 .option-container .delete-button{
-    pointer-events: none;
-    opacity: 0;
+    pointer-events: all;
+    opacity: 0.4;
 }
-.option-container:hover .delete-button{
+/* .option-container:hover .delete-button{
     opacity: 0.4;
     cursor: pointer;
     pointer-events: all;
-}
+} */
 .flex-space{
     justify-content: flex-start;
     padding-bottom: 2rem;
@@ -176,6 +176,33 @@
     .allMessage-container{
         height: 70vh;
         padding: 0rem 3rem 1rem 3rem;
+    }
+    .message--mine{
+        font-size: 1.2rem;
+    }
+    .message--other{
+        font-size: 1.2rem;
+    } /*I increased the font size for readability (especially in desktop) and to make the page look less empty*/
+    .input-message{
+        font-size: 1.2rem;
+    }
+    .send-svg{
+        width: 32px;
+    } /*Adjusted the size of the send button to make it more in line with the new size of the message box*/
+    .delete-button{
+        border: none;
+        background-color: #FFF;
+        font-size: 0.6rem;
+        cursor: pointer;
+    }
+    .option-container .delete-button{
+        pointer-events: none;
+        opacity: 0;
+    }
+    .option-container:hover .delete-button{
+        opacity: 0.4;
+        cursor: pointer;
+        pointer-events: all;
     }
 }
 @media(min-width:1100px){

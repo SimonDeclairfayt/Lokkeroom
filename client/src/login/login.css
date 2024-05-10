@@ -18,6 +18,7 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
     padding-bottom: 0.8rem;
+    font-size: 1rem; /*I increased the font size for readability (especially in desktop) and consistency across the page*/
 }
 .invalid-input{
     border-bottom: 1px #FF2D1B solid;
@@ -60,6 +61,7 @@
 .btn--login{
     margin-top: 2rem;
     margin-bottom: 3rem;
+    font-size: 1rem; /*I increased the font size for readability (especially in desktop) and consistency across the page*/
 }
 @media(min-width:764px){
     .title--login{

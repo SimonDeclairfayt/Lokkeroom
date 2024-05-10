@@ -16,6 +16,12 @@
     width: 100%;
     margin-bottom: 1.25rem;
 }
+.lobby-link-container-empty{
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    color: #6A7974;
+}
 
 /*LINKS*/
 .lobby-link{
@@ -27,6 +33,12 @@
     border-radius: 8px;
     display: flex;
     align-items: center;
+}
+.lobby-link:hover{
+    background-color: #E8E8E8;
+}
+.lobby-link:active{
+    background-color: #D8D8D8;
 }
 
 .lobby-link span{
@@ -49,7 +61,25 @@
     text-align: center;
     border-radius: 8px;
     margin-bottom: 2rem;
+    bottom: 50px; /*I changed the bottom margin to 50px to avoid overlapping with the logout button*/
+}
+.link--createLobby:active{
+    background-color: #58C3B6; /*I changed the active color to improve usability*/
+}
+.link--logout{
+    position: fixed;
+    color: #fff;
+    display: inline-block;
+    background-color: #FF2D1B;
+    width: 80%;
+    padding: 0.75rem 3rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
     bottom: 0;
+}
+.link--logout:active{
+    background-color: #FF5A3B;
 }
 /*FONTS*/
 .title{
@@ -107,6 +137,9 @@
     .link--createLobby{
         width: 60%;
     }
+    .link--logout{
+        width: 60%;
+    }
     .lobby-link{
         white-space: nowrap;
         overflow: hidden;
@@ -121,7 +154,25 @@
     .link--createLobby{
         width: 30%;
     }
+    .link--createLobby:hover{
+        background-color: #58C3B6;
+    }
+    .link--createLobby:active{
+        background-color: #24786D;
+    }
+    .link--logout{
+        width: 30%;
+    }
+    .link--logout:hover{
+        background-color: #FF5A3B;
+    }
+    .link--logout:active{
+        background-color: #FF2D1B;
+    }
     .lobby-container{
         width: 50%;
+    }
+    .lobby-link-container-empty{
+        width: 30%;
     }
 }

@@ -41,6 +41,9 @@ export default function Homepage() {
           <p className="text text--createLobby">
             Click on any of the channels to start talking to your team{" "}
           </p>
+          {channelsAvailable.length === 0 && (
+              <p className="lobby-link-container-empty">There are no channels yet. Click "Create Channel" to get started.</p>
+          )} {/*Added this for when the list is empty*/}
           <ul className="lobby-container">
             {channelsAvailable.map((channel) => {
               return (
@@ -61,6 +64,9 @@ export default function Homepage() {
           </ul>
           <Link to="/create-lobby" className="link link--createLobby">
             Create Channel
+          </Link>
+          <Link to="/login" className="link link--logout">
+            Logout
           </Link>
         </section>
       ) : (
